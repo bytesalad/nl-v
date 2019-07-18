@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - AvatarProjectile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - enemyBots
+  - avatar
+  - avatarProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: GameField
+    uniqueID: 2038303291
+    locked: 0
+  - name: ScreenGradient
+    uniqueID: 3221940337
+    locked: 0
+  - name: InGameObjects
+    uniqueID: 2697365083
+    locked: 0
+  - name: Planes
+    uniqueID: 913203437
+    locked: 0
+  - name: Border
+    uniqueID: 30902849
+    locked: 0
+  - name: InterfaceText
+    uniqueID: 1261422753
+    locked: 0
