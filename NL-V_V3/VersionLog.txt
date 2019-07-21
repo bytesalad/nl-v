@@ -3,3 +3,4 @@ These are the scripts I'm using to control the interactions between game objects
 
 Changes:
 >> Tutorial level enemy bot should be placed 4 unity plane blocks above the outer limit of the game field.
+>> If the enemy instantiates a projectile, one may want to change its rotation information. Let's see...

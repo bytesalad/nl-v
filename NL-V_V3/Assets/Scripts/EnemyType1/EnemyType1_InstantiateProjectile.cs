@@ -12,8 +12,9 @@ public class EnemyType1_InstantiateProjectile : MonoBehaviour
     {
         Vector2 unitDirVector = (destinationPosition - enemyPosition) / (destinationPosition - enemyPosition).magnitude;
 
-        Vector2 instantiatePosition = offsetMagnitude * unitDirVector;
+        Vector3 instantiatePosition = offsetMagnitude * unitDirVector;
 
-        Instantiate(prefab, instantiatePosition, Quaternion.identity);//tell the object to run it's velocity/movement script.
+        Instantiate(prefab, gameObject.transform.position + instantiatePosition, Quaternion.identity).gameObject.GetComponent<EnemyType1_Projectile_Physics>().Activate(unitDirVector);
+        //tell the object to run it's velocity/movement script.
     }
 }
