@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 2990874359490182423}
   - component: {fileID: 7189793848289909910}
   - component: {fileID: 7314863565319344251}
-  - component: {fileID: 5353973121733780455}
-  - component: {fileID: 2188842678389959536}
   - component: {fileID: 6898886402920186969}
   m_Layer: 8
   m_Name: EnemyType1
@@ -100,7 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatarTrans: {fileID: 0}
   rateOfLerp: 1
-  minimumDistance: 2
+  stopDistance: 0
+  shootingDistance: 0
 --- !u!114 &2990874359490182423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,34 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65dd99b1d2a75141b5d0e90fc932aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5353973121733780455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989149252246266051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fad8bc37a230a7b4daf05efa32fd29e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetMagnitude: 1
-  prefab: {fileID: 0}
---- !u!114 &2188842678389959536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989149252246266051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5004cb8230180c5429d572de1453878e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instantiationPeriod: 0.5
-  avatarTrans: {fileID: 0}
 --- !u!60 &6898886402920186969
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -16,7 +16,10 @@ public class EnemyType1_AI : MonoBehaviour
 
     private void Start()
     {
-        offenseLogicScript = gameObject.GetComponent<EnemyType1_OffenseLogic>();
+        if (offenseLogicScript != null)
+        {
+            offenseLogicScript = gameObject.GetComponent<EnemyType1_OffenseLogic>();
+        }
     }
 
     private void Update()
@@ -32,7 +35,10 @@ public class EnemyType1_AI : MonoBehaviour
 
         if ((enemyPos - avatarPos).magnitude <= shootingDistance)
         {
-            offenseLogicScript.SetBeginShooting(true);
+            if (offenseLogicScript != null)
+            {
+                offenseLogicScript.SetBeginShooting(true);
+            }
         }
 
         gameObject.transform.position = enemyPos;
