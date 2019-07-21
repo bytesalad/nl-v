@@ -1,0 +1,5 @@
+>> ProgramFile1 loaded...
+>> resistance_construct bot headed to this location
+>> This one is harmless for the purposes of calibration but may display varying levels of hostility in real life encounters (depending on the person).
+>> Taking damage reduces the strength_counter of the current session
+>> Shoot it multiple times to contain it.

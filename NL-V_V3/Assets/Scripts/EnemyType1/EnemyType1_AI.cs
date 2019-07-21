@@ -16,10 +16,7 @@ public class EnemyType1_AI : MonoBehaviour
 
     private void Start()
     {
-        if (offenseLogicScript != null)
-        {
             offenseLogicScript = gameObject.GetComponent<EnemyType1_OffenseLogic>();
-        }
     }
 
     private void Update()

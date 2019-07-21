@@ -1,5 +1,2 @@
->> NL-V Startup
->> This program is set to load automatically on first time boot
->> Name: First Run Calibration
->> Neuro-Link - Visual Version 1.0.165
->> Use the mouse_construct and point_click_method() to shoot the data_file.
+>> Systems running...
+>> Successful link made.

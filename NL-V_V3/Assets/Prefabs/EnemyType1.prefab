@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2990874359490182423}
   - component: {fileID: 7189793848289909910}
   - component: {fileID: 7314863565319344251}
+  - component: {fileID: 3456408338529716290}
+  - component: {fileID: 7137336762074559173}
   - component: {fileID: 6898886402920186969}
   m_Layer: 8
   m_Name: EnemyType1
@@ -70,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1597602213
-  m_SortingLayer: 3
+  m_SortingLayerID: -1232703837
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f0c5e21e3b110154495df6eabf6eb4e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatarTrans: {fileID: 0}
   rateOfLerp: 1
-  stopDistance: 0
-  shootingDistance: 0
+  stopDistance: 2
+  shootingDistance: 4
 --- !u!114 &2990874359490182423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +142,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65dd99b1d2a75141b5d0e90fc932aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3456408338529716290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989149252246266051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad8bc37a230a7b4daf05efa32fd29e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMagnitude: 0.5
+  prefab: {fileID: 341153091448924872, guid: 3aa61b96e92875f4d82bb88e1aa9058f, type: 3}
+  hostile: 0
+--- !u!114 &7137336762074559173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989149252246266051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5004cb8230180c5429d572de1453878e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instantiationPeriod: 0.5
+  avatarTrans: {fileID: 0}
 --- !u!60 &6898886402920186969
 PolygonCollider2D:
   m_ObjectHideFlags: 0

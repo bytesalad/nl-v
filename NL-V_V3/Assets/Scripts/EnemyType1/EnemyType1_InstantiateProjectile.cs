@@ -8,13 +8,18 @@ public class EnemyType1_InstantiateProjectile : MonoBehaviour
 
     [SerializeField] private GameObject prefab;
 
+    [SerializeField] private bool hostile;
+
     public void RunInstantiate(Vector2 enemyPosition, Vector2 destinationPosition)
     {
-        Vector2 unitDirVector = (destinationPosition - enemyPosition) / (destinationPosition - enemyPosition).magnitude;
+        if (hostile)
+        {
+            Vector2 unitDirVector = (destinationPosition - enemyPosition) / (destinationPosition - enemyPosition).magnitude;
 
-        Vector3 instantiatePosition = offsetMagnitude * unitDirVector;
+            Vector3 instantiatePosition = offsetMagnitude * unitDirVector;
 
-        Instantiate(prefab, gameObject.transform.position + instantiatePosition, Quaternion.identity).gameObject.GetComponent<EnemyType1_Projectile_Physics>().Activate(unitDirVector);
-        //tell the object to run it's velocity/movement script.
+            Instantiate(prefab, gameObject.transform.position + instantiatePosition, Quaternion.identity).gameObject.GetComponent<EnemyType1_Projectile_Physics>().Activate(unitDirVector);
+            //tell the object to run it's velocity/movement script.
+        }
     }
 }

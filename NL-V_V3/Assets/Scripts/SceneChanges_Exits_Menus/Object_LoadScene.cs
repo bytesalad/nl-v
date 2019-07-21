@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Object_LoadScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private string sceneName;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "AvatarProjectile")
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

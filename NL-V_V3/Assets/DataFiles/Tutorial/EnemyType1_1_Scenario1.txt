@@ -1,0 +1,3 @@
+>> Resistance represents the natural reponse of the human body to want to reject the intrusion of the NL-V. 
+>> This could lead to the system being rejected. Resistance must be contained before exploration can proceed.
+>> Find the final program_file to finish calibration.

@@ -1,5 +1,3 @@
->> File1 loaded into memory...
->> Contents:
->> Use the WASD_construct to move through the plane_abstract.
->> Developer comment: The plane_abstract is sparse. Files are scattered due to quantum processes that make the system possible.
->> Find another data_file.
+>> Hey... my name's Annie.
+>> I'm Rhett. Pleased to meet you.
+>> [chuckles] ... likewise!
