@@ -8,7 +8,19 @@ public class EnemyType1_AI : MonoBehaviour
 
     [SerializeField] private float rateOfLerp;
 
-    [SerializeField] private float minimumDistance;
+    [SerializeField] private float stopDistance;
+
+    [SerializeField] private float shootingDistance;
+
+    private EnemyType1_OffenseLogic offenseLogicScript;
+
+    private void Start()
+    {
+        if (offenseLogicScript != null)
+        {
+            offenseLogicScript = gameObject.GetComponent<EnemyType1_OffenseLogic>();
+        }
+    }
 
     private void Update()
     {
@@ -16,9 +28,17 @@ public class EnemyType1_AI : MonoBehaviour
 
         Vector2 enemyPos = gameObject.transform.position;
 
-        if ((enemyPos - avatarPos).magnitude >= minimumDistance)
+        if ((enemyPos - avatarPos).magnitude >= stopDistance)
         {
             enemyPos = Vector2.Lerp(enemyPos, avatarPos, rateOfLerp * Time.deltaTime);
+        }
+
+        if ((enemyPos - avatarPos).magnitude <= shootingDistance)
+        {
+            if (offenseLogicScript != null)
+            {
+                offenseLogicScript.SetBeginShooting(true);
+            }
         }
 
         gameObject.transform.position = enemyPos;

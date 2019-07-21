@@ -98,7 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatarTrans: {fileID: 0}
   rateOfLerp: 1
-  minimumDistance: 2
+  stopDistance: 0
+  shootingDistance: 0
 --- !u!114 &2990874359490182423
 MonoBehaviour:
   m_ObjectHideFlags: 0

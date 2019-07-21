@@ -3112,12 +3112,12 @@ PrefabInstance:
     - target: {fileID: 1989149252246266049, guid: 516abe1da445ad746876263183bd2e22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 14.8
       objectReference: {fileID: 0}
     - target: {fileID: 1989149252246266049, guid: 516abe1da445ad746876263183bd2e22,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65.7
+      value: 48.5
       objectReference: {fileID: 0}
     - target: {fileID: 1989149252246266049, guid: 516abe1da445ad746876263183bd2e22,
         type: 3}
@@ -3169,6 +3169,16 @@ PrefabInstance:
       propertyPath: avatarTrans
       value: 
       objectReference: {fileID: 1386462134}
+    - target: {fileID: 1989149252246266062, guid: 516abe1da445ad746876263183bd2e22,
+        type: 3}
+      propertyPath: stopDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989149252246266062, guid: 516abe1da445ad746876263183bd2e22,
+        type: 3}
+      propertyPath: shootingDistance
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2990874359490182423, guid: 516abe1da445ad746876263183bd2e22,
         type: 3}
       propertyPath: textOutput
@@ -3184,6 +3194,17 @@ PrefabInstance:
       propertyPath: programFile
       value: 
       objectReference: {fileID: 1106056095}
+    - target: {fileID: 5353973121733780455, guid: 516abe1da445ad746876263183bd2e22,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 341153091448924872, guid: 3aa61b96e92875f4d82bb88e1aa9058f,
+        type: 3}
+    - target: {fileID: 2188842678389959536, guid: 516abe1da445ad746876263183bd2e22,
+        type: 3}
+      propertyPath: avatarTrans
+      value: 
+      objectReference: {fileID: 1386462134}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 516abe1da445ad746876263183bd2e22, type: 3}
 --- !u!1001 &4235280429644975447
