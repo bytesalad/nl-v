@@ -1,0 +1,2 @@
+>> Welcome to NL-V
+>> Use the mouse_construct and the point_click_method() to select an item from the menu_plane_construct.
